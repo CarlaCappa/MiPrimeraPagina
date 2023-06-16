@@ -1,0 +1,163 @@
+
+
+/* RESPONSIVE, CONTAINER +*/ 
+
+/*1.  Abrir el archivo "styles.css" de la sección anterior y comenzar añadiendo un contenedor para centrar nuestro contenido. Agregar el siguiente código CSS:*/
+
+.container {
+
+    margin:0;
+    padding: 20px;
+    border: 2px dashed black;
+   /* background-color: rgb(177, 219, 87);*/
+  }
+/* 4. A continuación, crearemos un simple diseño responsivo de dos columnas utilizando Flexbox. Agregar el siguiente código CSS a tu archivo "styles.css":*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    border: 1px dashed black;
+    border-radius: 5px;
+  }
+  
+  .column {
+    border: 1px dashed blueviolet;
+    flex: 45%;
+    padding: 10px;
+
+  }
+
+/*7. Para hacer que el diseño sea verdaderamente responsivo, agregaremos una media query para apilar las columnas en pantallas más pequeñas. Agregar el siguiente código a tu archivo "styles.css":*/
+
+@media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      border-color: red;
+    }
+  }
+
+/*_______________________________________________________________________________________________________*/
+/* practica de clase CSS  */
+/*💡Te sugerimos investigar la página de 👉coolors.co y elegir una paleta de colores para aplicarla a tu página web y así darle más identidad.*/ 
+h1{ 
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5%;
+    margin: 10%;
+}
+
+/*_______________________________________________-*/
+/* Seccion de Nav */
+
+
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: black;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration:none;
+  color: #f2f2f2;
+}
+
+
+li>a:hover {
+  padding: 8px 24px;
+  text-decoration:none;
+  color: plum;
+}
+
+
+li {
+  list-style-type: none;
+  color: #f2f2f2;
+}
+
+a{
+  padding: 8px 24px;
+  text-decoration:none;
+  color: #f2f2f2;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.button-menu-toggle {
+  display: none;
+}
+
+/* RESONSIVE NAV*/
+/* 4. Agregar el siguiente código CSS a tu archivo “mi-1er-WS.css” para hacer que la barra de navegación sea adaptable, utilizando una media query:*/
+@media (max-width: 768px) {
+
+  .column {
+    flex: 100%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+/* se le da estilos al boton del menu en modo Resonsive*/
+  .button-menu-toggle {
+    display: block;
+    background-color: white;
+    border:none;
+    border-radius: 50px;
+    padding: 14px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    }
+ /* se da funcionalidad Responsive al bototn nav
+ donde se encuentra la classe 'nav.=-link-responsive ?*/
+  .nav-links.nav-links-responsive {
+    position: absolute; /* como opera la position Absolute aca? */ 
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(20,20,20,0.95);
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    left: 0;
+    padding-top: 200px;
+    align-items: center;
+    gap:70px;
+    font-size: 40px;
+
+
+  }
+}
+
+/* como agregar un video de fondo:
+boliografia 
+ https://www.google.co.il/search?q=como+insertar+un+video++de+background+en+html&ei=fX2CZOqxKNXQ1sQPgLScyAw&ved=0ahUKEwiq5Nr6gbX_AhVVqJUCHQAaB8kQ4dUDCA8&uact=5&oq=como+insertar+un+video++de+background+en+html&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yCAgAEIoFEIYDOgoIABBHENYEELADOgwIABCKBRCwAxAKEEM6CggAEIoFELADEEM6BQgAEIAEOgUIIRCgAToICCEQFhAeEB1KBAhBGABQzBFY2EJg_kdoA3ABeACAAa0CiAHIFpIBCDUuMTYuMS4xmAEAoAEBwAEByAEK&sclient=gws-wiz-serp#fpstate=ive&vld=cid:36df52a9,vid:tI3Gfn8affA */
+
+ video {
+  position: fixed;
+  /* el min hight y width sirven para que el video ocupe siempre toda la pantalla */
+ /* y  como hago para que el nav quede Fijo con la imagen de fondo???*/
+  min-width: 100%;
+  min-height: 80%;
+  /* Z-index es el atributo que pone el elemento a distinta profundidad de panlla,   a mayor el numero mas adelante de ubica */
+  z-index: -1;
+  /* el top y left sirven para cetrar el elemento Video en la pantalla */
+  top: 50%;
+  left:50%;
+  transform:  translateX(-50%) translateY(-50%);
+  opacity: 65%;
+ }

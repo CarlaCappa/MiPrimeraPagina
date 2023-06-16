@@ -1,0 +1,82 @@
+
+
+<!--2. Ahora, abrir el archivo "mi-primer-website.html" y envolver el contenido dentro de la etiqueta <body> con un nuevo elemento <div> con una clase de "container".  
+    
+5. Actualizar tu archivo "mi-primer-website.html" para incluir un diseño de dos columnas. Envolver los párrafos existentes en un nuevo <div> con una clase de "row" y encerrar cada párrafo dentro de un <div> con una clase de "column". Tu código HTML actualizado debería quedar similar al siguiente:-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <title>Mi Primer Website</title>
+</head>
+<body >
+    <!-- 
+        1. Abrir tu archivo “mi-primera-pagina.html”  y agregar el siguiente código HTML para la barra de navegación dentro de la etiqueta <body>, antes del elemento “.container”:-->
+    
+<!-- CUERPO HEADER  --> 
+
+    <div class="container-nav">
+        <nav class="navbar">
+          <a href="#" class="brand">Mi página web</a>
+          <!--2. Cambiar los nombres de “Home”, “About”, “Services” y “Contact” por los de tu preferencia.-->
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="contactoIndex.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- a este este boton del nav, se le crean estilos desde archivo Css, con el objetivo de darle funcionalidad Resonsive. no se ejecuta en jS -->
+        <button class="button-menu-toggle">Menu</button>
+    </div> 
+       
+ <!-- CUERPO MAIN  -->  
+         
+    <div class="container"> 
+        <!-- este boton es una practica de js, se utiliza el evento 'onclick' directamente de HTML y se ejecuta la  funcion 'showAlert' declara en js,   sin obtenerlo del DOM con getelement by Id -->
+        <button onclick="showAlert()"> Haz click en Mi!</button>
+        <video src="fondo_agua_azul.mp4" autoplay muted loop > </video>
+         <h1>Bienvenidos a mi primer Website!</h1>
+
+        <div class="row "> 
+            <div class="column">
+                <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates quaerat repudiandae quisquam magni magnam cum doloremque delectus mollitia sed ab voluptatem, optio, corporis unde adipisci itaque doloribus explicabo exercitationem! </p>
+
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore error doloribus, consequuntur similique inventore soluta quaerat quo unde dolor</p>
+            </div>
+            <div class="column">
+                <h2> Carla Cappa  </h2>
+               <p class="row"> Comenzemos...</p>
+            </div>
+        </div>
+        <div class="column">
+            <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates quaerat repudiandae quisquam magni magnam cum doloremque delectus mollitia sed ab voluptatem, optio, corporis unde adipisci itaque doloribus explicabo exercitationem! </p>
+
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore error doloribus, consequuntur similique inventore soluta quaerat quo unde dolor</p>
+        </div>
+        <div class="column">
+            <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates quaerat repudiandae quisquam magni magnam cum doloremque delectus mollitia sed ab voluptatem, optio, corporis unde adipisci itaque doloribus explicabo exercitationem! </p>
+
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore error doloribus, consequuntur similique inventore soluta quaerat quo unde dolor</p>
+        </div>
+    </div>
+    <div> 
+       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iste, illum vitae ad sit quibusdam autem sint perspiciatis perferendis dolorum tempora architecto numquam libero possimus aliquid recusandae fugiat itaque unde
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur assumenda iste tempora veritatis delectus ab, nesciunt inventore? Natus aspernatur officiis animi? Cum facilis iure ex deleniti quibusdam voluptate delectus saepe.lore Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas esse consequatur harum quod temporibus ad tenetur aspernatur suscipit voluptatem. Beatae a cum exercitationem quia illo doloremque quam, incidunt nam illum?.</p> 
+    </div>
+
+
+
+
+
+
+
+    <!-- linkear  archivo js a este archivo-->
+    <script src="indexScrpt.js"></script>
+</body>
+
+</html>
